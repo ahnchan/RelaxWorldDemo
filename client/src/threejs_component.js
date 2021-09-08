@@ -132,6 +132,8 @@ export const threejs_component = (() => {
 
     LoadSky_() {
       const hemiLight = new THREE.HemisphereLight(0x424a75, 0x6a88b5, 0.7);
+      // const hemiLight = new THREE.HemisphereLight(0x96d0ff, 0x018bfc, 0.7);
+
       // hemiLight.color.setHSL(0.6, 1, 0.4);
       // hemiLight.groundColor.setHSL(0.095, 1, 0.5);
       this.scene_.add(hemiLight);
@@ -149,11 +151,13 @@ export const threejs_component = (() => {
       texture.encoding = THREE.sRGBEncoding;
   
       const uniforms = {
-        "topColor": { value: new THREE.Color(0x000000) },
-        "bottomColor": { value: new THREE.Color(0x5d679e) },
+        // "topColor": { value: new THREE.Color(0x000000) },
+        // "bottomColor": { value: new THREE.Color(0x5d679e) },
+        "topColor": { value: new THREE.Color(0x018bfc) },
+        "bottomColor": { value: new THREE.Color(0x96d0ff) },
         "offset": { value: -500 },
         "exponent": { value: 0.3 },
-        "background": { value: texture },
+        // "background": { value: texture },
       };
       // uniforms["topColor"].value.copy(hemiLight.color);
   

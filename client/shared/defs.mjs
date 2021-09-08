@@ -4,8 +4,10 @@ export const defs = (() => {
 
   const _CHARACTER_MODELS = {
     paladin: {
-      base: 'paladin.glb',
-      path: './resources/characters/',
+      // base: 'paladin.glb',
+      // path: './resources/characters/',
+      base: 'Fox.gltf',
+      path: './resources/animals/glTF/',
       anchors: {
         rightHand: 'RightHandIndex1',
       },
@@ -16,7 +18,7 @@ export const defs = (() => {
         type: 'melee',
         range: 10,
       },
-      scale: 6.0,
+      scale: 4.0,
       inventory: {
         'inventory-1': 'weapon.axe1',
         'inventory-2': 'weapon.hammer1',
@@ -35,8 +37,10 @@ export const defs = (() => {
       name: 'Paladin',
     },
     sorceror: {
-      base: 'sorceror.glb',
-      path: './resources/characters/',
+      // base: 'sorceror.glb',
+      // path: './resources/characters/',
+      base: 'Husky.gltf',
+      path: './resources/animals/glTF/',
       anchors: {
         rightHand: 'RightHandIndex1',
       },
@@ -62,8 +66,10 @@ export const defs = (() => {
       name: 'Sorceror',
     },
     warrok: {
-      base: 'warrok.glb',
-      path: './resources/characters/',
+      // base: 'warrok.glb',
+      // path: './resources/characters/',
+      base: 'Cow.gltf',
+      path: './resources/animals/glTF/',
       anchors: {
         rightHand: 'RightHandIndex1',
       },
@@ -89,8 +95,10 @@ export const defs = (() => {
       name: 'Monster Guy',
     },
     zombie: {
-      base: 'zombie-guy.glb',
-      path: './resources/characters/',
+      // base: 'zombie-guy.glb',
+      // path: './resources/characters/',
+      base: 'Bull.gltf',
+      path: './resources/animals/glTF/',
       anchors: {
         rightHand: 'RightHandIndex1',
       },
@@ -101,7 +109,7 @@ export const defs = (() => {
         type: 'melee',
         range: 10,
       },
-      scale: 4.0,
+      scale: 8.0,
       inventory: {},
       stats: {
         health: 20,

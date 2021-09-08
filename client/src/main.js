@@ -25,10 +25,12 @@ class CrappyMMOAttempt {
   _Initialize() {
     this.entityManager_ = new entity_manager.EntityManager();
 
-    document.getElementById('login-ui').style.visibility = 'visible';
-    document.getElementById('login-button').onclick = () => {
-      this.OnGameStarted_();
-    };
+    // document.getElementById('login-ui').style.visibility = 'visible';
+    // document.getElementById('login-button').onclick = () => {
+    //   this.OnGameStarted_();
+    // };
+
+    this.OnGameStarted_();
   }
 
   OnGameStarted_() {
