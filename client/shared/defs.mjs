@@ -18,7 +18,7 @@ export const defs = (() => {
         type: 'melee',
         range: 10,
       },
-      scale: 4.0,
+      scale: 3.0,
       inventory: {
         'inventory-1': 'weapon.axe1',
         'inventory-2': 'weapon.hammer1',
@@ -51,7 +51,7 @@ export const defs = (() => {
         type: 'magic',
         range: 40,
       },
-      scale: 4.0,
+      scale: 3.0,
       inventory: {},
       stats: {
         health: 100,

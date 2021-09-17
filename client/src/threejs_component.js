@@ -108,9 +108,14 @@ export const threejs_component = (() => {
       this.camera_.position.set(25, 10, 25);
   
       this.scene_ = new THREE.Scene();
-      this.scene_.fog = new THREE.FogExp2(0x89b2eb, 0.00002);
+      // this.scene_.fog = new THREE.FogExp2(0x89b2eb, 0.00002);
+
+      this.scene_.fog = new THREE.FogExp2(0xffffff, 0.00002);
   
-      let light = new THREE.DirectionalLight(0x8088b3, 0.7);
+      // let light = new THREE.DirectionalLight(0x8088b3, 0.7);
+
+      let light = new THREE.DirectionalLight(0xffffff, 0.7);
+
       light.position.set(-10, 500, 10);
       light.target.position.set(0, 0, 0);
       light.castShadow = true;
@@ -134,6 +139,8 @@ export const threejs_component = (() => {
       const hemiLight = new THREE.HemisphereLight(0x424a75, 0x6a88b5, 0.7);
       // const hemiLight = new THREE.HemisphereLight(0x96d0ff, 0x018bfc, 0.7);
 
+      // const hemiLight = new THREE.HemisphereLight(0xffffff, 0xffffff, 0.7);
+
       // hemiLight.color.setHSL(0.6, 1, 0.4);
       // hemiLight.groundColor.setHSL(0.095, 1, 0.5);
       this.scene_.add(hemiLight);
@@ -153,10 +160,16 @@ export const threejs_component = (() => {
       const uniforms = {
         // "topColor": { value: new THREE.Color(0x000000) },
         // "bottomColor": { value: new THREE.Color(0x5d679e) },
-        "topColor": { value: new THREE.Color(0x018bfc) },
-        "bottomColor": { value: new THREE.Color(0x96d0ff) },
+
+        // "topColor": { value: new THREE.Color(0x018bfc) },
+        // "bottomColor": { value: new THREE.Color(0x96d0ff) },
+
+        "topColor": { value: new THREE.Color(0xffffff) },
+        "bottomColor": { value: new THREE.Color(0xffffff) },
+
         "offset": { value: -500 },
         "exponent": { value: 0.3 },
+        
         // "background": { value: texture },
       };
       // uniforms["topColor"].value.copy(hemiLight.color);

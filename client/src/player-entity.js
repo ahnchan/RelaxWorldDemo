@@ -127,7 +127,8 @@ export const player_entity = (() => {
 
         this.animations_['idle'] = _FindAnim('Idle');
         this.animations_['walk'] = _FindAnim('Walk');
-        this.animations_['run'] = _FindAnim('Run');
+        // this.animations_['run'] = _FindAnim('Run');
+        this.animations_['run'] = _FindAnim('Gallop');
         this.animations_['death'] = _FindAnim('Death');
         this.animations_['attack'] = _FindAnim('Attack');
         this.animations_['dance'] = _FindAnim('Dance');

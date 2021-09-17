@@ -69,11 +69,12 @@ export const world_manager = (() => {
       this.tickTimer_ = 0.0;
 
       // Hack
+      // Monster
       for (let x = -40; x <= 40; ++x) {
         for (let z = -40; z <= 40; ++z) {
-          if (Math.random() < 0.1) {
+          if (Math.random() < 0.1) {  // 10%
             const pos = vec3.fromValues(x * 75, 0, z * 75);
-            if (Math.random() < 0.1) {
+            if (Math.random() < 0.5) {  // 50%
               this.spawners_.push(new MonsterSpawner({
                 parent: this, pos: pos, class: 'warrok'}));
             } else {

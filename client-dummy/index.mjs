@@ -6,7 +6,10 @@ import {network_controller} from './src/network-controller.mjs';
 
 function Main() {
   const network = new network_controller.NetworkController();
-  // _WORLD.Run();
+  // network.RunPlayer();
+
+
+  
 }
 
 
